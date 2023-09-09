@@ -7,6 +7,5 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
       - name: 'Coderbyte'
-        description: 'Coderbyte action'
         run: sh run.sh
     
