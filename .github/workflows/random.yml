@@ -1,0 +1,12 @@
+name: run on push shell
+on: [push]
+jobs:
+  run-bash-command:
+    runs-on: ubuntu-latest
+    name: "hellow world"
+    steps:
+      - uses: actions/checkout@master
+      - name:  " image from  Docker file"
+        run: docker build -t random:1.0  random/.
+      - name: "run the containter"
+        run: docker run -p 5000:5000 random:1.0 
