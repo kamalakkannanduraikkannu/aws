@@ -12,7 +12,7 @@ jobs:
         run: env
       - name: "print pwd"
         run: pwd
-      - run: echo "pwd"
+      - run: ls -l 
       - name:  "execute the bash script"
         run: bash run.sh
     
