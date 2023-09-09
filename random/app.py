@@ -11,6 +11,7 @@ def four_d():
 	i3= str(random.randint(0,9))
 	i4= str(random.randint(0,9))
 	manual = i1+i2+i3+i4
+	print("four_d:",four_d," ToTo:",toto," 4D manual:",manual)
 	return '<br><br><center><h1><font color=blue>Lucky 4D : '+four_d+'<br><br> ToTo : '+toto +'<br><br> 4d :'+ manual
 if __name__ == '__main__':
 	webbrowser.open_new("http://127.0.0.1:5000")
