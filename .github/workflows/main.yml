@@ -1,11 +1,18 @@
+name: run on push shell
 on: [push]
 jobs:
-  hello_world_job:
+  run-bash-command:
     runs-on: ubuntu-latest
-    name: A job to say hello
+    name: "hellow world"
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-      - name: 'Coderbyte'
-        run: sh run.sh
+      - uses: actions/checkout@master
+      - name: "echo msg"
+        run: echo "hai kamal"
+      - name: "print env"
+        run: env
+      - name: "print pwd"
+        run: pwd
+      - run: echo "pwd"
+      - name:  "execute the bash script"
+        run: bash run.sh
     
