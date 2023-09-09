@@ -14,4 +14,4 @@ for fi in  file_respose:
 #read file condent from object "Body" 
 for f in file:
   res = s3.get_object(Bucket=B_name,Key=str(f))
-  print(res.get("Body").read())
+  print(res.get("Body").read().decode('utf-8'))
