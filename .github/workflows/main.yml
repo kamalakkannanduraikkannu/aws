@@ -6,13 +6,8 @@ jobs:
     name: "hellow world"
     steps:
       - uses: actions/checkout@master
-      - name: "echo msg"
-        run: echo "hai kamal"
-      - name: "print env"
-        run: env
-      - name: "print pwd"
-        run: pwd
-      - run: ls -l 
-      - name:  "execute the bash script"
-        run: bash aws-s3/run.sh
+      - name:  " image from  Docker file"
+        run: docker build -t coderbyte:1.0  aws-s3/.
+      - name: "run the containter"
+        run: docker run coderbyte:1.0 
     
