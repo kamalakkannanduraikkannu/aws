@@ -14,5 +14,4 @@ def four_d():
 	print("four_d:",four_d," ToTo:",toto," 4D manual:",manual)
 	return '<br><br><center><h1><font color=blue>Lucky 4D : '+four_d+'<br><br> ToTo : '+toto +'<br><br> 4d :'+ manual
 if __name__ == '__main__':
-	webbrowser.open_new("http://127.0.0.1:5000")
-	app.run()
+   four_d()
